@@ -1,3 +1,6 @@
+html{
+	font-size:20px;
+}
 body{margin:0; padding:0; background:#eee;}
 
 /** 公共样式定义 **/
@@ -7,9 +10,11 @@ body{margin:0; padding:0; background:#eee;}
 .mrl-auto{margin:0 auto;}
 .pd-tb10{padding:10px 0;}
 .pd-tb40{padding:40px 0;}
+.pd15{padding:15px;}
 
 .bg-white{background:#fff;}
 .font-icon{font-size:24px;}
+.font-p{font-size:0.9rem; line-height:2em; }
 
 .color-main{color:#dc3545;}
 .color-gray{color:#666;}
@@ -73,7 +78,8 @@ a:hover{ text-decoration:none;}
 /*首页*/
 .iproduct{padding: 0px;}
 .iproduct .title{height:45px; line-height: 20px; overflow: hidden; padding-top:5px; color:#444;}
-.iproduct .col-xs-6{padding-top:15px; border-right:1px solid #eee; border-bottom:1px solid #eee;}
+.iproduct .col-xs-6{padding:15px 5px; text-align:center; border-right:1px solid #eee; border-bottom:1px solid #eee;}
+.iproduct .pimg{width:6rem; height:6rem;}
 iproduct .price{ font-size:14px; color:#333; line-height:28px; padding-left:115px;}
 .index-item .btn a{ float:right; width:80px; height:30px; line-height:30px; text-align:center; background:#f00; color:#fff; font-weight: bold;}
 .index-item .btn a span{ font-size:10px;}
