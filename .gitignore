@@ -1,2 +1,6 @@
 /aleWechat/nbproject/private/
 /nbproject/private/
+/.idea
+/.git
+/App/Common/Conf/db.php
+/App/Runtime
