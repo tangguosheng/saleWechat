@@ -24,7 +24,7 @@ header("Content-type: text/html; charset=utf-8");
 unset($_GET['m']);
 if(version_compare(PHP_VERSION,'5.3.0','<'))  die('PHP 版本必须大于等于5.3.0 !');
 
-define('DIR_SECURE_CONTENT', 'powered by http://www.dragondea.cn');
+define('DIR_SECURE_CONTENT', 'powered by http://www.sheeu.com');
 
 // 开启调试模式 建议开发阶段开启 部署阶段注释或者设为false
 // define('APP_DEBUG', 1);
@@ -33,5 +33,5 @@ define('APP_DEBUG', 1);
 if(!APP_DEBUG && !strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'micromessenger')){
 	die('请通过微信访问');
 }
-define('APP_PATH','./Application/');
+define('APP_PATH','./App/');
 require './#ThinkPHP/ThinkPHP.php';

@@ -21,7 +21,7 @@ class HomeController extends Controller {
 			session('user', M('user') -> find(intval($_GET['user_id'])));
 
 		//session('user', M('user') -> find(10004));
-		
+
 		if(session('?user')){
 			// 不能直接从session获取数据，不是最新的 
 			$this -> user = M('user') -> find(session('user.id'));

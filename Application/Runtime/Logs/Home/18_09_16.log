@@ -1,0 +1,522 @@
+[ 2018-09-16T14:47:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003940s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002570s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002659s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+
+[ 2018-09-16T14:49:14+08:00 ] 127.0.0.1 /?user_id=10001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002036s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0155s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dd_product` [ RunTime:0.0128s ]
+SQL: SELECT * FROM `dd_product` ORDER BY id desc LIMIT 10   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `dd_product_cate` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `dd_product_cate` WHERE ( pid=0 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000123s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002770s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003211s ]
+
+[ 2018-09-16T14:49:15+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0112s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `dd_data` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `dd_data` WHERE ( date=20180915 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dd_order` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined offset: 1 D:\www\saleWechat\#ThinkPHP\Library\Think\Db\Driver.class.php 第 572 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_order` WHERE `create_time` BETWEEN '1536940800 and 1537027200' AND null LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined offset: 1 D:\www\saleWechat\#ThinkPHP\Library\Think\Db\Driver.class.php 第 572 行.
+SQL: SELECT SUM(total) AS tp_sum FROM `dd_order` WHERE `create_time` BETWEEN '1536940800 and 1537027200' AND null LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 D:\www\saleWechat\#ThinkPHP\Library\Think\Db\Driver.class.php 第 572 行.
+SQL: SELECT SUM(wxpay) AS tp_sum FROM `dd_order` WHERE `create_time` BETWEEN '1536940800 and 1537027200' AND null LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `dd_user` WHERE ( sub_time between 1536940800 and 1537027200 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: INSERT INTO `dd_data` (`orders`,`total`,`wxpay`,`subs`,`date`) VALUES ('0',NULL,NULL,'0','20180915') [ RunTime:0.0015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002176s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002209s ]
+
+[ 2018-09-16T15:05:25+08:00 ] 127.0.0.1 /?user_id=10001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `dd_product` [ RunTime:0.0216s ]
+SQL: SELECT * FROM `dd_product` ORDER BY id desc LIMIT 10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dd_product_cate` [ RunTime:0.0219s ]
+SQL: SELECT * FROM `dd_product_cate` WHERE ( pid=0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000209s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2018-09-16T15:05:25+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0134s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dd_data` [ RunTime:0.0383s ]
+SQL: SELECT * FROM `dd_data` WHERE ( date=20180915 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-09-16T15:05:37+08:00 ] 127.0.0.1 /?user_id=10001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.1186s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0319s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `dd_product` [ RunTime:0.0307s ]
+SQL: SELECT * FROM `dd_product` ORDER BY id desc LIMIT 10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dd_product_cate` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `dd_product_cate` WHERE ( pid=0 )  [ RunTime:0.0008s ]
+
+[ 2018-09-16T15:06:17+08:00 ] 127.0.0.1 /?user_id=10001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0176s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dd_product` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `dd_product` ORDER BY id desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_product_cate` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `dd_product_cate` WHERE ( pid=0 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000369s ]
+
+[ 2018-09-16T15:06:17+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0186s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0214s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_data` [ RunTime:0.0203s ]
+SQL: SELECT * FROM `dd_data` WHERE ( date=20180915 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-09-16T15:06:47+08:00 ] 127.0.0.1 /?user_id=10001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0337s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dd_product` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `dd_product` ORDER BY id desc LIMIT 10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `dd_product_cate` [ RunTime:0.0263s ]
+SQL: SELECT * FROM `dd_product_cate` WHERE ( pid=0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000370s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000246s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000310s ]
+
+[ 2018-09-16T15:06:48+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0265s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_data` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `dd_data` WHERE ( date=20180915 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-09-16T15:07:09+08:00 ] 127.0.0.1 /?user_id=10001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0211s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dd_product` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `dd_product` ORDER BY id desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_product_cate` [ RunTime:0.0172s ]
+SQL: SELECT * FROM `dd_product_cate` WHERE ( pid=0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012170s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000254s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000327s ]
+
+[ 2018-09-16T15:07:10+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dd_data` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `dd_data` WHERE ( date=20180915 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-09-16T15:10:23+08:00 ] 127.0.0.1 /?user_id=10001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dd_product` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `dd_product` ORDER BY id desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_product_cate` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `dd_product_cate` WHERE ( pid=0 )  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012599s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000262s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000265s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2018-09-16T15:10:23+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0189s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0257s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dd_data` [ RunTime:0.0247s ]
+SQL: SELECT * FROM `dd_data` WHERE ( date=20180915 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-09-16T15:12:25+08:00 ] 127.0.0.1 /?user_id=10001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0248s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0174s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dd_product` [ RunTime:0.0179s ]
+SQL: SELECT * FROM `dd_product` ORDER BY id desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_product_cate` [ RunTime:0.0168s ]
+SQL: SELECT * FROM `dd_product_cate` WHERE ( pid=0 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012772s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012841s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000264s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2018-09-16T15:12:25+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0184s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `dd_data` [ RunTime:0.0336s ]
+SQL: SELECT * FROM `dd_data` WHERE ( date=20180915 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-09-16T15:13:47+08:00 ] 127.0.0.1 /?user_id=10001
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0162s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `dd_product` [ RunTime:0.0175s ]
+SQL: SELECT * FROM `dd_product` ORDER BY id desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_product_cate` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `dd_product_cate` WHERE ( pid=0 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000159s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000198s ]
+
+[ 2018-09-16T15:13:48+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0242s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_data` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `dd_data` WHERE ( date=20180915 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-09-16T15:14:13+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=product&id=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0244s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0258s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_product` [ RunTime:0.0242s ]
+SQL: SELECT * FROM `dd_product` WHERE `id` = 3 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\saleWechat\Application\Home\Controller\IndexController.class.php 第 37 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2018-09-16T15:24:54+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=cart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000489s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `dd_order_product` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `dd_order_product` WHERE `user_id` = 10001 AND `order_id` = 0  [ RunTime:0.0010s ]
+
+[ 2018-09-16T15:24:54+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=cart_edit
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0116s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dd_order_product` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `dd_order_product` WHERE `user_id` = 10001 AND `order_id` = 0  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined index: addr D:\www\saleWechat\Application\Runtime\Cache\Home\9f59ae3001e1a3b34362bf69e19fcb0b.php 第 119 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012395s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012472s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000261s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2018-09-16T15:24:54+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0183s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `dd_data` [ RunTime:0.0170s ]
+SQL: SELECT * FROM `dd_data` WHERE ( date=20180915 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-09-16T15:24:56+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000258s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000344s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `dd_product` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `dd_product` ORDER BY id desc LIMIT 10   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_product_cate` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `dd_product_cate` WHERE ( pid=0 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000110s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009669s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000151s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000188s ]
+
+[ 2018-09-16T15:24:57+08:00 ] 127.0.0.1 /index.php?m=&c=Index&a=data
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000225s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `dd_config` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `dd_config`  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: user_id D:\www\saleWechat\Application\Home\Controller\HomeController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `dd_user` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `dd_user` WHERE `id` = 10001 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `dd_data` [ RunTime:0.0169s ]
+SQL: SELECT * FROM `dd_data` WHERE ( date=20180915 ) LIMIT 1   [ RunTime:0.0005s ]
+

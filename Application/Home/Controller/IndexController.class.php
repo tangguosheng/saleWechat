@@ -11,9 +11,11 @@ class IndexController extends HomeController {
 		// 查询分类
 		$cates = M('product_cate') -> where('pid=0') -> select();
 		$this -> assign('cates', $cates);
-		
+
+
 		// 判断是否设置了木板
 		if(!empty($this -> _tpl['index'])){
+
 			$tpl = 'Index/index/'.$this -> _tpl['index'].'/index';
 		}
     	$this -> display($tpl);

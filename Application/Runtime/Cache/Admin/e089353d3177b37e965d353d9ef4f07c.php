@@ -4,12 +4,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>管理后台</title>
-<link rel="stylesheet" href="/mall/Public/admin/css/style.default.css" type="text/css" />
-<link rel="stylesheet" href="/mall/Public/plugins/bootstrap/css/bootstrap.font.css" type="text/css" />
-<script type="text/javascript" src="/mall/Public/admin/js/plugins/jquery-1.7.min.js"></script>
-<script type="text/javascript" src="/mall/Public/admin/js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
-<script type="text/javascript" src="/mall/Public/admin/js/plugins/jquery.cookie.js"></script>
-<script type="text/javascript" src="/mall/Public/admin/js/custom/general.js"></script>
+<link rel="stylesheet" href="/Public/admin/css/style.default.css" type="text/css" />
+<link rel="stylesheet" href="/Public/plugins/bootstrap/css/bootstrap.font.css" type="text/css" />
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery-ui-1.8.16.custom.min.js"></script>
+<script type="text/javascript" src="/Public/admin/js/plugins/jquery.cookie.js"></script>
+<script type="text/javascript" src="/Public/admin/js/custom/general.js"></script>
 
 <!--[if IE 9]>
     <link rel="stylesheet" media="screen" href="css/style.ie9.css"/>

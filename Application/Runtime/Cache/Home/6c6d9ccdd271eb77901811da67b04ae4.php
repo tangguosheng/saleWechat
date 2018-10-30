@@ -19,10 +19,6 @@
 </head>
 
 <body>
-	<div class="header-blank"></div>
-    <div class="header">
-		<?php echo ($_CFG["site"]["name"]); ?>
-	</div>
 	<div class="banner">
 		<style>
 			.focus{ width:100%;  margin:0 auto; position:relative; overflow:hidden;   }
@@ -74,26 +70,19 @@
 			</div>
 		</div><?php endforeach; endif; else: echo "" ;endif; ?>
 	</div>
-	
 	<div class="footer-blank"></div>
 	<div class="footer">
 		<ul>
 			<li>
 				<a href="<?php echo U('Index/index');?>">
 					<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
-					商城首页
+					首页
 				</a>
 			</li>
 			<li>
 				<a href="<?php echo U('Index/all');?>">
 					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-					全部商品
-				</a>
-			</li>
-			<li>
-				<a href="javascript:;" id="search">
-					<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-					搜索
+					产品
 				</a>
 			</li>
 			<li>
@@ -105,7 +94,7 @@
 			<li>
 				<a href="<?php echo U('Index/ucenter');?>">
 					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-					微商中心
+					会员中心
 				</a>
 			</li>
 		</ul>

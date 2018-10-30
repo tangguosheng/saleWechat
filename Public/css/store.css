@@ -1,4 +1,22 @@
-body{}
+body{margin:0; padding:0; background:#eee;}
+
+/** 公共样式定义 **/
+.mt8{margin-top:8px;}
+.mt1{margin-top:25px;}
+.ml8{margin:0 4px;}
+.mrl-auto{margin:0 auto;}
+.pd-tb10{padding:10px 0;}
+.pd-tb40{padding:40px 0;}
+
+.bg-white{background:#fff;}
+.font-icon{font-size:24px;}
+
+.color-main{color:#dc3545;}
+.color-gray{color:#666;}
+
+.bdrds{border-radius:5px; }
+.align-c{text-align: center;}
+
 a:hover{ text-decoration:none;}
 .header-blank{ height:50px;}
 .header{
@@ -34,11 +52,11 @@ a:hover{ text-decoration:none;}
 .cates .close{ position:absolute; top:5px; right:10px; color:#fff;opacity:1;}
 
 /*底部*/
-.footer-blank{ height:42px;}
-.footer{ z-index:999; height:42px; background:#444444; color:#fff; position:fixed; width:100%; bottom:0; left:0; box-shadow:0px -2px 2px #aaa;}
+.footer-blank{ height:48px;}
+.footer{ z-index:999; height:48px; background:#fff; color:#444; position:fixed; width:100%; bottom:0; left:0; box-shadow:0px -2px 2px #dc3545;}
 .footer a{ color:inherit;}
 .footer ul{
-	list-style:none; padding:0; margin:0; line-height:42px; text-align:center;
+	list-style:none; padding:0; margin:5px 0 0 0; line-height:42px; text-align:center;
 	display:-moz-box; /* Firefox */
 	display:-webkit-box; /* Safari and Chrome */
 	display:box;
@@ -53,17 +71,12 @@ a:hover{ text-decoration:none;}
 .footer ul li span{ display:block; font-size:14px; padding-top:5px;}
 
 /*首页*/
-.index-main{ padding:15px;}
-.index-item{ height:105px; margin-bottom:15px;}
-.index-item img.product{ width:105px; height:105px; border:none; float:left;}
-.index-item .title{ padding-top:5px;}
-.index-item .title,.index-item .price{ font-size:12px; color:#fff; line-height:28px; padding-left:115px;}
-.index-item .btn a{ float:left; width:80px; height:30px; line-height:30px; text-align:center; background:#fff; color:#000;}
+.iproduct{padding: 0px;}
+.iproduct .title{height:45px; line-height: 20px; overflow: hidden; padding-top:5px; color:#444;}
+.iproduct .col-xs-6{padding-top:15px; border-right:1px solid #eee; border-bottom:1px solid #eee;}
+iproduct .price{ font-size:14px; color:#333; line-height:28px; padding-left:115px;}
+.index-item .btn a{ float:right; width:80px; height:30px; line-height:30px; text-align:center; background:#f00; color:#fff; font-weight: bold;}
 .index-item .btn a span{ font-size:10px;}
-.index-item:nth-child(4n+1){ background:#540f33;}
-.index-item:nth-child(4n+2){ background:#646464;}
-.index-item:nth-child(4n+3){ background:#1a1a1a;}
-.index-item:nth-child(4n+4){ background:#236a75;}
 
 /*所有商品*/
 .all-sort-blank{ height:30px;}
@@ -71,7 +84,7 @@ a:hover{ text-decoration:none;}
 .all-sort ul{
 	padding:0; margin:0; list-style:none; display:-moz-box; /* Firefox */
 	display:-webkit-box; /* Safari and Chrome */
-	display:box;
+	display:block;
 	}
 .all-sort ul li{
 	text-align:center;
