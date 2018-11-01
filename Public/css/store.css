@@ -8,30 +8,33 @@ body{margin:0; padding:0; background:#eee;}
 .mt1{margin-top:25px;}
 .ml8{margin:0 4px;}
 .mrl-auto{margin:0 auto;}
+.pd-l20{padding-left:20px;}
 .pd-tb10{padding:10px 0;}
 .pd-tb40{padding:40px 0;}
 .pd15{padding:15px;}
 
 .bg-white{background:#fff;}
 .font-icon{font-size:24px;}
-.font-p{font-size:0.9rem; line-height:2em; }
+.font-price{font-size:0.9rem;}
+.font-tip{font-size:0.6rem}
+.font-p{font-size:0.8rem; line-height:2em; }
 
 .color-main{color:#dc3545;}
 .color-gray{color:#666;}
-
+.bg-white{background:#fff;}
 .bdrds{border-radius:5px; }
 .align-c{text-align: center;}
 
 a:hover{ text-decoration:none;}
-.header-blank{ height:50px;}
+.header-blank{ height:40px;}
 .header{
-	padding:0 10px; height:50px; line-height:50px; font-size:16px; background:#d43f3a; color:#fff; text-align:center;
-	box-shadow:0px 2px 2px #999;
+	height:40px; line-height:40px; font-size:16px; background:#dc3545; color:#fff; text-align:center;
+
 	position:fixed; top:0; width:100%; left:0;
 	z-index:999;
 	border-radius:0;
 	}
-.header .left{ float:left;}
+.header .left{ float:left; padding-left:10px;}
 .header .right{ float:right;}
 .header a{ color:#fff;}
 .myselect{
@@ -80,7 +83,7 @@ a:hover{ text-decoration:none;}
 .iproduct .title{height:45px; line-height: 20px; overflow: hidden; padding-top:5px; color:#444;}
 .iproduct .col-xs-6{padding:15px 5px; text-align:center; border-right:1px solid #eee; border-bottom:1px solid #eee;}
 .iproduct .pimg{width:6rem; height:6rem;}
-iproduct .price{ font-size:14px; color:#333; line-height:28px; padding-left:115px;}
+.iproduct .price{ font-size:14px; color:#333; line-height:28px; padding-left:115px;}
 .index-item .btn a{ float:right; width:80px; height:30px; line-height:30px; text-align:center; background:#f00; color:#fff; font-weight: bold;}
 .index-item .btn a span{ font-size:10px;}
 
@@ -115,18 +118,20 @@ iproduct .price{ font-size:14px; color:#333; line-height:28px; padding-left:115p
 /*产品页*/
 .product-footer-blank{ height:40px;}
 .product-footer{
-	height:40px; position:fixed; width:100%; bottom:0px; left:0; text-align:center; padding:0 10px;
-	padding-top:5px;
-	background:#eeeeee; box-shadow:0 -2px 3px #ccc;
+	height:40px; position:fixed; width:100%; bottom:0px; left:0; text-align:center;
+	background:#fff; box-shadow:0 -1px 10px #dc3545;
 }
 .product-footer .buy{ display:block; width:205px; height:30px; line-height:30px; background:#e4393c; color:#fff; margin:0 auto;}
-.product-footer .left{ float:left; color:#666; font-size:12px;}
+.product-footer .left{ float:left; margin:5px 0px 0 25px; color:#666; font-size:12px;}
 .product-footer .right{ float:right; color:#666; font-size:12px;}
 .product-footer .left .glyphicon,.product-footer .right .glyphicon{ display:block;}
-.product-pic{ text-align:center; padding:10px; background:#f2f2f2; border-bottom:1px solid #cccccc;}
+.buyBtn-go, .buyBtn-cart{float:right; margin:0px; height:40px; line-height: 40px; color:#fff; padding:0px 10px; border:0 none;}
+.buyBtn-go{background:#dc3545;}
+.buyBtn-cart{background:#ec971f}
+.product-pic{ text-align:center; background:#fff; }
 .product-pic img{ max-width:100%;}
-.product-title{ padding:0 15px; line-height:30px; font-weight:bold;}
-.product-price{ line-height:20px; height:20px; padding:0 15px;}
+.product-title{ padding:10px; line-height:30px; font-size:0.8rem; background:#fff; border-top:1px solid #eee;}
+.product-price{height:40px; line-height:20px;padding:0 10px 10px 10px; background:#fff;}
 .product-price .left{ float:left; text-decoration:line-through}
 .product-price .right{ float:right;}
 .product-price .right .red{ color:red; font-weight:bold;}
@@ -134,8 +139,9 @@ iproduct .price{ font-size:14px; color:#333; line-height:28px; padding-left:115p
 .product-nums .down,.product-nums .up{ line-height:28px; padding:6px 15px; background:#d5d5d5; border:1px solid #ccc;}
 .product-nums .nums{ height:30px; text-align:center; margin:0; padding:0; border:1px solid #ccc; width:60px;}
 .product-nums a{ color:inherit;}
-.product-body-title{ height:60px; padding:10px 0; background:#f7f7f7}
-.product-body-title-box{ background:#fff; line-height:40px; padding-left:15px;}
+.product-body{background:#fff;}
+.product-body-title{ height:60px; padding:10px 0; background:#fff;}
+.product-body-title-box{line-height:40px; padding-left:15px; border-bottom:1px solid #eee;}
 .product-body img{ max-width:100%;}
 
 /*购物车*/
